@@ -1,10 +1,12 @@
 from telegram.ext import Updater, CommandHandler, InlineQueryHandler
 from telegram import ParseMode, ReplyKeyboardMarkup, Emoji
 import logging
+import sys
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-updater = Updater(token="your_token")
+token = sys.argv[1]
+updater = Updater(token=token)
 dispatcher = updater.dispatcher
 
 logger = logging.getLogger()
