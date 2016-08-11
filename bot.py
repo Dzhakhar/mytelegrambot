@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-updater = Updater(token="262687283:AAFCR8A11Re67G-0PmpRAvoeEi8ovCcHRJE")
+updater = Updater(token="your_token")
 dispatcher = updater.dispatcher
 
 logger = logging.getLogger()
